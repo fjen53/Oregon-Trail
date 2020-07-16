@@ -1,18 +1,19 @@
-class traveler {
-    constructor(name, food, isHealthy) {
+class Traveler {
+    constructor(name) {
         this.name = name
         this.food = 1
         this.isHealthy = true
     }
     hunt() {
-        return this.food = + 2
+        return this.food += 2
 
     }
     eat() {
-        for (let index = 1; index < this.food; index--) {
+        if (this.food === 0) {
             return this.isHealthy = false;
+        } else {
+            this.food -= 1
         }
+
     }
 }
-const newTraveler = new traveler('Marie', 'diane', 'Annick')
-
