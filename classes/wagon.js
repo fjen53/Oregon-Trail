@@ -17,10 +17,10 @@ class Wagon {
         let index = 0
         for (index = 0; index > this.passengers.length; index++) {
             if (!this.passengers[index].isHealthy) {
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     totalFood() {
